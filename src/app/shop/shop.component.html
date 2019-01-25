@@ -1,6 +1,6 @@
 <h2>The Cat Box</h2>
 
-<div *ngFor="let product of products" class="panel panel-default">
+<div *ngFor="let product of products" (click)="goToDetailPage(product)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{product.title}}</em></h3>
   </div>

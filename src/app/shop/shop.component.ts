@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -7,6 +8,8 @@ import { Product } from '../product.model';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent {
+
+  constructor(private router: Router) {}
 
   products: Product[] = [
     new Product("Furry Catnip Pillow", 9, "Our most popular fabric 12 inches of fun", 1),
@@ -17,5 +20,9 @@ export class ShopComponent {
     new Product("Organic Loose Catnip 1/2 Oz", 7, "We are finally able to offer up our Organic loose Catnip. It is cut and sifted, human-grade, and a 1/2 ounce paper bowl sells for 7.00", 6),
     new Product("Carrot of Joy and Happiness", 11, "Our new refillable style pillow, in our super popular carrot style. It has a bow at the top that you can untie, so that you can add more catnip, and empty it out to wash it.", 7),
   ]
+
+  goToDetailPage(clickedProduct: Product) {
+    this.router.navigate(['products', clickedProduct.id])
+  }
 
 }

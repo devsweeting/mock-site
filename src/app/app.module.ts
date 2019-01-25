@@ -6,6 +6,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ShopComponent } from './shop/shop.component';
     WelcomeComponent,
     AboutComponent,
     ShopComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
