@@ -1,3 +1,7 @@
 <h2>The Cat Box</h2>
 
-<p>All our fine products will be listed here shortly!</p>
+<div *ngFor="let product of products" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{product.title}}</em></h3>
+  </div>
+</div>

@@ -8,7 +8,7 @@ import { Product } from '../product.model';
 })
 export class ShopComponent {
 
-  product: Product[] = [
+  products: Product[] = [
     new Product("Furry Catnip Pillow", 9, "Our most popular fabric 12 inches of fun", 1),
     new Product("Upholstery catnip Body Pillow", 9, "This is the fancy version of our Catnip Body Pillow. High-end, tougher materials for cats who are rougher on things.", 2),
     new Product("Big Diddy Pillow", 9, "Our most popular fabric 12 inches of fun", 3),
