@@ -1,0 +1,14 @@
+.catbox-title {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.product-list {
+  margin-bottom: 20px;
+}
+
+.product-stock {
+  color: #18bc3c;
+}
