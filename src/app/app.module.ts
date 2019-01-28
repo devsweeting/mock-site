@@ -7,6 +7,7 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     AboutComponent,
     ShopComponent,
     ProductDetailComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

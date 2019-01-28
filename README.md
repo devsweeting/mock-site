@@ -14,6 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Clone this repository `https://github.com/devsweeting/Super-Galactic-Calculator.git`.
 * Install dependencies: `$ npm install` then `npm run start`
 * To run test run command   `npm run test`
+* To view site run `ng serve` and go to localhost:4200 on your browser.
 
 ![mock-site](/img/mock-site-screenshot.png)
 
