@@ -1,0 +1,14 @@
+.cat-five-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.d-block w-100 {
+  width: 10em;
+  height: 10em;
+}
+
+.values-container {
+    margin-bottom: 20px;
+}
