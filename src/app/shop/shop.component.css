@@ -12,3 +12,7 @@
 .product-stock {
   color: #18bc3c;
 }
+
+.product-list :hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
