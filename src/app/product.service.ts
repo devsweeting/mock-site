@@ -11,4 +11,12 @@ export class ProductService {
       return PRODUCTS;
     }
 
+    getProductById(productId: number){
+      for (let i = 0; i < PRODUCTS.length; i++) {
+        if (PRODUCTS[i].id === productId) {
+          return PRODUCTS[i]
+        }
+      }
+    }
+
 }

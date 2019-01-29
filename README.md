@@ -16,6 +16,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * To run test run command   `npm run test`
 * To view site run `ng serve` and go to localhost:4200 on your browser.
 
+To download your own Firebase api key, visit:
+Then insert the key into the src/app/api-key.ts folder
+
 <!-- ![mock-site](/img/mock-site-screenshot.png) -->
 
 
