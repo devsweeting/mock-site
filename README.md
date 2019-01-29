@@ -1,6 +1,6 @@
 # The Spoiled Cat
 
-#### This is a mock eccommerce store for the Portland Local Business "The Spoiled Cat"
+#### This is a mock eccommerce store for the Local Portland Business "The Spoiled Cat".
 
 #### By Devin Sweeting
 
@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * To run test run command   `npm run test`
 * To view site run `ng serve` and go to localhost:4200 on your browser.
 
-![mock-site](/img/mock-site-screenshot.png)
+<!-- ![mock-site](/img/mock-site-screenshot.png) -->
 
 
 ## Build
