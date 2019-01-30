@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(title: string, price: number, description: string) {
     let newProduct: Product = new Product(title, price, description);
-    console.log(newProduct)
+    this.productService.addProduct(newProduct);
   }
 
 }
