@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ShopComponent implements OnInit {
 
   products: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private productService: ProductService) {}
 
@@ -20,11 +21,11 @@ export class ShopComponent implements OnInit {
 
   ngOnInit() {
     this.products = this.productService.getProducts();
+    // console.log(this.router.url);
   }
 
-  // goToDetailPage(clickedProduct: Product) {
-  //   this.router.navigate(['products', clickedProduct.id])
-  // };
-
+  goToDetailPage(clickedProduct) {
+    this.router.navigate(['products', clickedProduct.$key])
+  };
 
 }

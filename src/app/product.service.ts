@@ -19,12 +19,22 @@ export class ProductService {
       this.products.push(newProduct)
     }
 
-    // getProductById(productId: number){
-    //   for (let i = 0; i < PRODUCTS.length; i++) {
-    //     if (PRODUCTS[i].id === productId) {
-    //       return PRODUCTS[i]
-    //     }
-    //   }
-    // }
+    getProductById(productId: number){
+      return this.database.object('products/' + productId);
+    }
+
+    updateProduct(localUpdatedProduct){
+      let productEntryInFirebase = this.getProductById(localUpdatedProduct.$key);
+      productEntryInFirebase.update({
+        title: localUpdatedProduct.title,
+        price: localUpdatedProduct.price,
+        description: localUpdatedProduct.description
+      });
+    }
+
+    deleteProduct(localProductToDelete){
+      let productEntryInFirebase = this.getProductById(localProductToDelete.$key);
+      productEntryInFirebase.remove();
+    }
 
 }

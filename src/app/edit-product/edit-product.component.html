@@ -1,0 +1,23 @@
+<h4>Edit Product</h4>
+
+<div>
+  <label>Product Title:</label>
+  <br>
+  <input [(ngModel)]="selectedProduct.title">
+</div>
+
+<div>
+  <label>Product Price:</label>
+  <br>
+  <input [(ngModel)]="selectedProduct.price">
+</div>
+
+<div>
+  <label>Product Description:</label>
+  <br>
+  <input [(ngModel)]="selectedProduct.description">
+</div>
+
+<button class="btn btn-warning" (click)="beginUpdatingProduct(selectedProduct)">Update</button>
+
+<button class="btn btn-danger" (click)="beginDeletingProduct(selectedProduct)">Delete</button>

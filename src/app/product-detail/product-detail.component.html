@@ -1,6 +1,6 @@
 <div class="">
-<h2>{{productToDisplay.title}}</h2>
-<h3>{{productToDisplay.description}}</h3>
-<h4>This product has id number: {{productToDisplay.id}}</h4>
-<p>{{productToDisplay.price}}</p>
+<h2>{{(productToDisplay |async)?.title}}</h2>
+<h3>{{(productToDisplay |async)?.description}}</h3>
+<h4>This product has id number: {{(productToDisplay |async)?.$key}}</h4>
+<p>{{(productToDisplay |async)?.price}}</p>
 </div>
