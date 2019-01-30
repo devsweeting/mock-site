@@ -1,6 +1,6 @@
 # The Spoiled Cat
 
-#### This is a mock eccommerce store for the Local Portland Business "The Spoiled Cat".
+#### This is a mock eccommerce store for the Local Portland Business "The Spoiled Cat". SEE LIVE @ https://thespoiledcat-228.firebaseapp.com/
 
 #### By Devin Sweeting
 
