@@ -8,7 +8,18 @@ import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ContactComponent } from './contact/contact.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -18,12 +29,15 @@ import { ContactComponent } from './contact/contact.component';
     ShopComponent,
     ProductDetailComponent,
     ContactComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     // HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

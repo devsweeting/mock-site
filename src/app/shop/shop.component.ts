@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product.model';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-shop',
@@ -11,17 +12,19 @@ import { ProductService } from '../product.service';
 })
 export class ShopComponent implements OnInit {
 
+  products: FirebaseListObservable<any[]>;
+
   constructor(private router: Router, private productService: ProductService) {}
 
-  products: Product[];
+  // products: Product[];
 
   ngOnInit() {
     this.products = this.productService.getProducts();
   }
 
-  goToDetailPage(clickedProduct: Product) {
-    this.router.navigate(['products', clickedProduct.id])
-  };
+  // goToDetailPage(clickedProduct: Product) {
+  //   this.router.navigate(['products', clickedProduct.id])
+  // };
 
 
 }
