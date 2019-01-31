@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from '../product.model';
+import * as firebase from "firebase";
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [ProductService]
+  providers: [
+    ProductService,
+    AuthenticationService,
+  ]
 })
 export class AdminComponent implements OnInit {
 

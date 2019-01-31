@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 
 export class ProductDetailComponent implements OnInit {
 
-  productId: string;
+  productId: number;
   productToDisplay;
 
   constructor(
