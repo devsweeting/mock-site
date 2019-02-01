@@ -3,3 +3,8 @@
 body {
   background-color: #fcfcfc;
 }
+
+@font-face {
+    font-family: Bondi;
+    src: url("/assets/font/Bondi.ttf") format("truetype");
+}
