@@ -3,7 +3,7 @@
   background-image: url(https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 700px;
   color: white
 }
 
@@ -11,11 +11,26 @@ h1 {
   font-size: 60px;
 }
 
+.welcome-h1 {
+  text-shadow: black 0.3em 0.2em 0.6em;
+  margin-bottom: 15px;
+}
 
+.welcome-h4 {
+  margin-bottom: 20px;
+  text-shadow: black 0.3em 0.2em 0.6em;
+}
+
+.welcome-p {
+  margin-top: 350px;
+  text-shadow: black 0.3em 0.2em 0.6em;
+}
+
+/* 
 .options-centered {
   border: 1px solid black;
   margin: 5px;
-}
+} */
 
 .testimonials {
   margin: 10px;

@@ -12,3 +12,8 @@
 .values-container {
     margin-bottom: 20px;
 }
+
+.custom {
+  width: 200px;
+  height: 130px;
+}
