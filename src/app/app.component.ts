@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthenticationService } from './authentication.service';
 import { Router } from '@angular/router';
+import {ShoppingCartModule} from 'ng-shopping-cart'; 
 
 @Component({
   selector: 'app-root',

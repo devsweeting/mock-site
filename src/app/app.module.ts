@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import {ShoppingCartModule} from 'ng-shopping-cart';
 
 
 export const firebaseConfig = {
@@ -41,7 +42,10 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    ShoppingCartModule.forRoot({
+      // add in optional configuration here
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
