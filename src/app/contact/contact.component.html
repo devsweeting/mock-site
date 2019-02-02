@@ -11,13 +11,13 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required [(ngModel)]="model.name">
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required [(ngModel)]="model.email">
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" [(ngModel)]="model.comments"></textarea>
       <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn btn-success pull-right" type="submit">Send</button>

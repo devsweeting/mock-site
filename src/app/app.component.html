@@ -17,10 +17,10 @@
     <ul class="nav navbar-nav justify-content-end navbar-right">
       <li *ngIf="isLoggedIn">
         <a class="welcome-name">Welcome, {{userName}}</a>
-        <button class="btn btn-info log"><a (click)="logout()">Log out</a></button>
+        <button class="btn btn-info log-out"><a (click)="logout()">Log out</a></button>
       </li>
       <li *ngIf ="!isLoggedIn">
-        <button class="btn-info log"><a (click)="login()">Log in</a></button>
+        <button class="btn-info log-in"><a (click)="login()">Log in</a></button>
       </li>
       <!-- <li><button class="btn btn-warning"><a class="text-muted" routerLink="admin">Admin</a></button></li> -->
     </ul>

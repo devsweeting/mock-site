@@ -21,7 +21,14 @@ li {
   margin-right: 10px;
 }
 
-.log {
+.log-out {
   background-color: tomato;
+  border-radius: 8px;
   border: none;
+}
+
+.log-in {
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
 }
