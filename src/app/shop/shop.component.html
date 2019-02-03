@@ -18,3 +18,19 @@
     </div>
   </a>
 </div>
+
+<div class="list-group product-list" *ngFor="let product of products | async">
+  <a class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1" (click)="goToDetailPage(product)">{{product.title}}</h5>
+      <small>${{product.price}}.00</small>
+      <small class="product-stock">Product in stock</small>
+    </div>
+    <div *ngIf="currentRoute === '/admin'">
+      <p class="mb-1">{{product.description}}</p>
+      <p class="mb-1">{{product.$key}}</p>
+      <hr>
+      <app-edit-product [selectedProduct]="product"></app-edit-product>
+    </div>
+  </a>
+</div>
