@@ -12,8 +12,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * This application was built on Webpack .....
 * Clone this repository `https://github.com/devsweeting/Super-Galactic-Calculator.git`.
-* Install dependencies: `$ npm install` then `npm run start`
-* To run test run command   `npm run test`
+* Install dependencies: `$ npm install`
+* To open mock-site you'll need your own firebase key.
+  * Log-in to firebase and create an API-Key under 'authentication' and then click on "web set-up"
+  * create this file in project `/src/app/api-keys.ts`
+  * Use this syntax export const masterFirebaseConfig= { `insert copied Firebase data here`
 * To view site run `ng serve` and go to localhost:4200 on your browser.
 
 To download your own Firebase api key, visit:
