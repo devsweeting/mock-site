@@ -1,37 +1,45 @@
-<!-- <div class="efile-now-top">
-  <p><strong>E-file now!</strong> and find out what government subsidies you qualiy for!</p>
-</div> -->
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <ul>
-        <li><a class="navbar-brand" routerLink="">The Spoiled Cat</a></li>
-        <li><a routerLink="about">About</a></li>
-        <li><a routerLink="shop">Shop</a></li>
-        <li><a routerLink="contact">Contact</a></li>
-        <li><a routerLink="admin">Admin</a></li>
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <!-- <h4 class="text-white"><a class="navbar-brand" routerLink="">The Spoiled Cat</a></h4> -->
+      <span class="text-muted">Explore The Spoiled Cat Webpage!</span>
+      <ul class="nav-routes-ul">
+        <li class="nav-routes route-home"><a routerLink="">Home</a></li>
+        <li class="nav-routes route-about"><a routerLink="about">About</a></li>
+        <li class="nav-routes route-shop"><a routerLink="shop">Shop</a></li>
+        <li class="nav-routes route-contact"><a routerLink="contact">Contact</a></li>
+        <li class="nav-routes route-admin"><a routerLink="admin">Admin</a></li>
     </ul>
     </div>
-
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <ul class="nav navbar-nav justify-content-end navbar-right">
       <li *ngIf="isLoggedIn">
-        <a class="welcome-name">Welcome, {{userName}}</a>
-        <button class="btn btn-info log-out"><a (click)="logout()">Log out</a></button>
+        <p> <span class="welcome-name">Welcome, {{userName}}</span>
+        <button class="btn btn-info log-out"><a (click)="logout()">Log out</a></button></p>
       </li>
       <li *ngIf ="!isLoggedIn">
         <button class="btn-info log-in"><a (click)="login()">Log in</a></button>
       </li>
-      <!-- <li><button class="btn btn-warning"><a class="text-muted" routerLink="admin">Admin</a></button></li> -->
     </ul>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <router-outlet></router-outlet>
 
 
 <footer class="footer">
   <div class="container">
-    <p>something will go here</p>
+    <p>Trademark: The Spoiled Cat</p>
   </div>
 </footer>
+
+<!-- Other nav options (vertical)
+<p class="nav-routes"><a routerLink="about">About</a></p>
+<p class="nav-routes"><a routerLink="contact">Contact</a></p>
+<p class="nav-routes"><a routerLink="shop">Shop</a></p>
+<p class="nav-routes"><a routerLink="contact">Contact</a></p>
+<p class="nav-routes"><a routerLink="admin">Admin</a></p> -->
