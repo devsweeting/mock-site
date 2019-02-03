@@ -4,11 +4,11 @@
       <!-- <h4 class="text-white"><a class="navbar-brand" routerLink="">The Spoiled Cat</a></h4> -->
       <span class="text-muted">Explore The Spoiled Cat Webpage!</span>
       <ul class="nav-routes-ul">
-        <li class="nav-routes route-home"><a routerLink="">Home</a></li>
-        <li class="nav-routes route-about"><a routerLink="about">About</a></li>
-        <li class="nav-routes route-shop"><a routerLink="shop">Shop</a></li>
-        <li class="nav-routes route-contact"><a routerLink="contact">Contact</a></li>
-        <li class="nav-routes route-admin"><a routerLink="admin">Admin</a></li>
+        <li routerLink="" class="nav-routes route-home">Home</li>
+        <li routerLink="about"class="nav-routes route-about">About</li>
+        <li routerLink="shop" class="nav-routes route-shop">Shop</li>
+        <li routerLink="contact" class="nav-routes route-contact">Contact</li>
+        <li routerLink="admin" class="nav-routes route-admin">Admin</li>
     </ul>
     </div>
   </div>
@@ -22,6 +22,7 @@
         <button class="btn btn-info log-out"><a (click)="logout()">Log out</a></button></p>
       </li>
       <li *ngIf ="!isLoggedIn">
+        <p> <span class="welcome-name">Welcome, Log in to access Admin</span>
         <button class="btn-info log-in"><a (click)="login()">Log in</a></button>
       </li>
     </ul>
@@ -31,15 +32,8 @@
 <router-outlet></router-outlet>
 
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <p>Trademark: The Spoiled Cat</p>
   </div>
-</footer>
-
-<!-- Other nav options (vertical)
-<p class="nav-routes"><a routerLink="about">About</a></p>
-<p class="nav-routes"><a routerLink="contact">Contact</a></p>
-<p class="nav-routes"><a routerLink="shop">Shop</a></p>
-<p class="nav-routes"><a routerLink="contact">Contact</a></p>
-<p class="nav-routes"><a routerLink="admin">Admin</a></p> -->
+</footer> -->

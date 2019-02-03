@@ -1,6 +1,14 @@
-<div class="">
-<h2>{{(productToDisplay |async)?.title}}</h2>
-<h3>{{(productToDisplay |async)?.description}}</h3>
-<h4>This product has id number: {{(productToDisplay |async)?.$key}}</h4>
-<p>{{(productToDisplay |async)?.price}}</p>
+<div class="container detail-container">
+  <div class="card details-card">
+  <h2>{{(productToDisplay |async)?.title}}</h2>
+  <p>{{(productToDisplay |async)?.description}}</p>
+  <p>This product has id number: {{(productToDisplay |async)?.$key}}</p>
+  <p>{{(productToDisplay |async)?.price}}</p>
+  <small class="product-stock">Product in stock</small>
+  </div>
 </div>
+
+
+<footer class="product-detail-footer">
+  <img class="img-detail" src="http://pngimg.com/uploads/cat/cat_PNG104.png" alt="peek-a-boo">
+</footer>

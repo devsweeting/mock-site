@@ -2,11 +2,8 @@
   margin-top: 35px;
 }
 
-a {
-  color: white;
-}
-
 .nav-routes {
+  color: white;
   display: inline;
   width: fit-content;
   margin: 15px;

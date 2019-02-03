@@ -1,0 +1,30 @@
+.detail-container {
+  margin-top: 150px;
+  padding-left: 10px;
+  background-color: tomato;
+}
+
+.details-card {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.product-stock {
+  color: #18bc3c;
+}
+
+.product-detail-footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  align-content: center;
+  justify-content: center
+}
+
+.img-detail {
+  height: 200px;
+  width: 260px;
+}
