@@ -14,6 +14,9 @@
   color: #18bc3c;
 }
 
+.purchase-button {
+  width: 20px;
+}
 /* .product-list :hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 } */

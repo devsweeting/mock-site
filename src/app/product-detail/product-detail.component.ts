@@ -29,4 +29,8 @@ export class ProductDetailComponent implements OnInit {
    });
    this.productToDisplay = this.productService.getProductById(this.productId);
   }
+
+  alertFeature() {
+    alert("Whoops! this feature is unavailable!")
+  }
 }

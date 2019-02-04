@@ -5,6 +5,9 @@
   <p>This product has id number: {{(productToDisplay |async)?.$key}}</p>
   <p>{{(productToDisplay |async)?.price}}</p>
   <small class="product-stock">Product in stock</small>
+    <div class="puchase">
+      <button class="purchase-button btn btn-success" (click)="alertFeature()">Purchase</button>
+    </div>
   </div>
 </div>
 
