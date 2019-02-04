@@ -8,7 +8,7 @@
         <li routerLink="about"class="nav-routes route-about">About</li>
         <li routerLink="shop" class="nav-routes route-shop">Shop</li>
         <li routerLink="contact" class="nav-routes route-contact">Contact</li>
-        <li routerLink="admin" class="nav-routes route-admin">Admin</li>
+        <li *ngIf="isLoggedIn" routerLink="admin" class="nav-routes route-admin">Admin</li>
     </ul>
     </div>
   </div>
