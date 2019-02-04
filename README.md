@@ -1,13 +1,15 @@
 # The Spoiled Cat
 
-#### This is a mock eccommerce store for the Local Portland Business "The Spoiled Cat".
-### See deployed site at https://thespoiledcat-228.firebaseapp.com/
+#### A Mock E-commerce store for the Local Portland Business "The Spoiled Cat". Find them at the Saturday Market!
+
+### Original Site: https://www.thespoiledcat.com/
+### Deployed Site: https://thespoiledcat-228.firebaseapp.com/
 
 #### By Devin Sweeting
 
 ## Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5. The Business "The Spoiled Cat" is a local small business that operates at the Portland Saturday Market. To see the original site visit: "https://www.thespoiledcat.com/default.html"
+This application is Epicodus week 3 & 4 independent code review.
 
 ## Setup/Installation Requirements
 
@@ -51,7 +53,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Technologies Used
 
-Webpack, Karma & Jasmine, ESlint, ES6 Javascript, Angular, Node.js.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
+& Webpack, Karma & Jasmine, ESlint, ES6 Javascript, Angular, Node.js.
 
 ### License
 
