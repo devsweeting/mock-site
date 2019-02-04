@@ -1,12 +1,12 @@
 <div class="container">
-  <h3 class="text-center">Contact</h3>
+  <h3 class="text-center">Contact Form</h3>
   <p class="text-center"><em>We love our cuddly customers!</em></p>
   <div class="row test">
     <div class="col-md-4">
-      <p>Contact us:</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Portland, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: 503-***-****</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: something@gmail.com</p>
+      <p>Contact Us:</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>The Portland Saturday Market</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: 503-771-1782</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: robncarla@aol.com</p>
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -20,7 +20,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" [(ngModel)]="model.comments"></textarea>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn btn-success pull-right" type="submit">Send</button>
+          <button class="btn btn-success pull-right" (click)="contactFormSubmit()">Send</button>
         </div>
       </div>
     </div>

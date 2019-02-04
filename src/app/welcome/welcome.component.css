@@ -28,11 +28,17 @@ h1 {
   text-shadow: black 0.3em 0.2em 0.6em;
 }
 
+.puurfect-gift {
+  margin-top: -10;
+}
+
 .testimonials {
   margin: 10px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .card-title {
