@@ -1,6 +1,6 @@
 # The Spoiled Cat
 
-#### A Mock E-commerce store for the Local Portland Business "The Spoiled Cat". Find them at the Saturday Market!
+#### A Mock E-commerce store for the Local Portland Business "The Spoiled Cat".They are a local small business that operates at the Portland Saturday Market.
 
 ### Original Site: https://www.thespoiledcat.com/
 ### Deployed Site: https://thespoiledcat-228.firebaseapp.com/
