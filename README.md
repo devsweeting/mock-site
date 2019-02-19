@@ -19,8 +19,9 @@ This application is Epicodus week 3 & 4 independent code review.
   * Log-in to firebase and create an API-Key under 'authentication' and then click on "web set-up"
   * create this file in project `/src/app/api-keys.ts`
   * Use this syntax below:
-
+```
    export const masterFirebaseConfig= { `insert copied Firebase api key thats between the same brackets here` }
+```
 
 * To view site run `ng serve` and go to localhost:4200 on your browser.
 
@@ -30,13 +31,20 @@ This application is Epicodus week 3 & 4 independent code review.
 ### See deployed site at https://thespoiledcat-228.firebaseapp.com/
 
 
-## Build
+## Completed Features
+* Multiple routes to /Home, /About, /Shop, /ProductPage
+* Contact Form
+* Log in for google.
+* Only see admin route if logged in
+* Admin access to CRUD capabilities with store products
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Planned Features
+* Have site link to online shopping cart through Paypal.
+* Link contact form to firebase database and send email alerts to site admin.
+* sliding display of happy cats with strong products. new /testimonials route?
+* Link fb and twitter feed.
+* personalize with store owner family images.
 
 
 ## Known Bugs

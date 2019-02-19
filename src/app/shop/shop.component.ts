@@ -3,6 +3,7 @@ import { Product } from '../product.model';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-shop',
